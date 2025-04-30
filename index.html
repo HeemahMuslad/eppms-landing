@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCAA EPPMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      section {
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section
+      class="relative bg-cover bg-center pb-32 pt-20 flex flex-col items-start justify-center px-4 md:px-6"
+      style="background-image: url('./images/hero-bg.png')"
+    >
+      <!-- Navbar -->
+      <header
+        class="absolute top-10 left-1/2 transform -translate-x-1/2 bg-[#7272724D] w-[90%] py-3 px-4 md:px-6 flex items-center justify-between rounded-lg shadow-lg"
+      >
+        <!-- Logo & Title -->
+        <div class="flex items-center gap-3">
+          <img
+            src="./images/ncaalogo 2.png"
+            alt="NCAA Logo"
+            class="w-10 h-10 rounded-full"
+          />
+          <span class="text-white text-lg font-semibold">NCAA</span>
+        </div>
+
+        <!-- Login Button -->
+        <div class="flex gap-2">
+          <button
+            class="bg-[#E4E6FF] text-[#01054C] px-4 md:px-6 py-2 rounded-lg hover:bg-[#01054C] hover:text-white text-sm md:text-base"
+          >
+            NCAA
+          </button>
+          <button
+            class="bg-[#01054C] text-white px-8 py-2 rounded-lg hover:bg-[#E4E6FF] hover:text-[#01054C]"
+          >
+            Login
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Content -->
+
+      <div
+        class="w-full max-w-xl lg:max-w-2xl text-white text-center md:text-left mt-20 p-4 md:mt-32 sm:x-8 lg:ml-20 inset-2 bg-[#97979780] bg-opacity-50"
+      >
+        <!-- Green Banner -->
+        <div
+          class="w-full sm:w-[80%] mx-auto md:mx-0 hidden md:flex items-center bg-[#E1FFDA] text-[#065F46] px-4 py-2 rounded-full justify-between mb-4 shadow-md"
+        >
+          <img src="./images/hand.png" alt="Icon" class="w-6 h-6" />
+          <span class="font-semibold text-sm md:text-base text-center"
+            >Optimize Projects. Drive Success.</span
+          >
+          <img src="./images/dollar.png" alt="Icon" class="w-6 h-6" />
+        </div>
+
+        <h1 class="text-xl md:text-3xl lg:text-4xl mt-20 md:mt-0">
+          Welcome to the NCAA's Electronic Project Portfolio Management System
+          (EPPMS).
+        </h1>
+        <p
+          class="mt-4 text-[14px] sm:text-[16px] max-w-lg lg:max-w-xl leading-relaxed"
+        >
+          Streamline project lifecycles, enhance collaboration, and ensure
+          on-time, on-budget delivery with our robust and intuitive platform.
+          EPPMS empowers your teams to manage complex projects effectively,
+          fostering transparency and accountability across all initiatives.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-5">
+          <button
+            class="bg-[#01054C] text-white px-6 md:px-8 py-2 rounded-lg hover:bg-[#E4E6FF] hover:text-[#01054C] transition-all"
+          >
+            Login
+          </button>
+          <button
+            class="bg-[#E4E6FF] text-[#01054C] px-5 md:px-6 py-2 rounded-lg hover:bg-[#01054C] hover:text-white transition-all"
+          >
+            Explore live projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minister Section -->
+    <section class="py-16 px-4 md:px-6 w-full max-w-full box-border">
+      <div
+        class="container mx-auto flex items-center justify-between"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white p-6 rounded-lg"
+        >
+          <div class="flex flex-col space-y-4">
+            <p class="text-3xl">About NCAA</p>
+            <p class="text-sm">
+              Nigeria Civil Aviation Authority is the regulatory body for
+              aviation in Nigeria. It became autonomous with the passing into
+              law of the Civil Aviation Act 2006 by the National Assembly and
+              assent of the President of the Federal Republic of Nigeria.
+            </p>
+          </div>
+          <div class="flex flex-col justify-between w-full">
+            <!-- Vision -->
+            <div class="space-y-3">
+              <img src="./images/vision.png" alt=""  />
+              <p class="font-bold text-lg">Vision</p>
+
+              <p class="text-sm text-[#575757]">
+                To be one of the leading civil aviation authorities in the
+                world.
+              </p>
+            </div>
+
+            <!-- Mission -->
+          </div>
+          <div class="space-y-3">
+            <img src="./images/mission.png" alt=""  />
+            <p class="font-bold text-lg">Mission</p>
+            <p class="text-sm text-[#575757]">
+              To provide aviation safety and economic regulation in the most
+              efficient, effective, quality and technology driven manner to the
+              satisfaction and benefit of all stakeholders, consistent with the
+              highest international standards and the sustainable development of
+              the industry and national economy
+            </p>
+          </div>
+          <!-- <div class="bg-white rounded-lg hover:shadow-lg transition-shadow">
+            <img src="./images/man 1.png" alt="" />
+          </div> -->
+        </div>
+      </div>
+
+      <div class="flex  container mx-auto  items-center justify-between">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-2 p-6 rounded-lg"
+        >
+          <div class="rounded-2xl bg-white p-2 text-center w-full md:w-auto">
+            <img
+              src="./images/minister.png"
+              alt="Minister"
+              class="max-w-full h-auto"
+            />
+            <p>
+              <span class="text-2xl"> Festus kayamo</span>
+              <span class="text-xs">SAN, CON, FCIArb(UK) </span>
+            </p>
+            <p class="text-sm">
+              HON. MINISTER OF AVIATION AND AEROSPACE DEVELOPMENT
+            </p>
+            <p class="text-xs">FEDERAL REPUBLIC OF NIGERIA</p>
+          </div>
+
+          <div>
+            <img src="./images/25 1.png" alt="" />
+          </div>
+          <div class="rounded-2xl p-2 text-center w-full md:w-auto bg-white">
+            <img
+              src="./images/man 1.png"
+              alt="Minister"
+              class="max-w-full h-auto"
+            />
+            <p class="text-2xl">CAPT. Chris Najomo</p>
+            <p class="text-xs">Ag. DG NCAA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="py-16 px-4 md:px-6 text-center w-full max-w-full">
+      <div class="container mx-auto">
+        <h2 class="text-xl md:text-3xl">
+          Your Centralized Project Management Solution.
+        </h2>
+        <p class="mt-4 text-base md:text-lg">
+          Manage every aspect of your projects with our intuitive platform, from
+          planning and tracking to reporting and analysis.
+        </p>
+        <div class="mt-6 flex justify-center">
+          <img
+            src="./images/eppms-dashboard.png"
+            alt="Dashboard 1"
+            class="max-w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section
+      class="py-16 px-4 md:px-6 bg-white mx-auto my-5 rounded-lg max-w-[calc(100%-10px)]"
+    >
+      <div
+        class="container mx-auto flex flex-col lg:flex-row gap-7 items-start w-full"
+      >
+        <!-- Left Column -->
+        <div class="lg:w-1/3 space-y-12 text-center lg:text-left">
+          <div class="space-y-4">
+            <h2 class="text-2xl">Features for Project Management</h2>
+            <p class="text-gray-700">
+              The EPPMS' features are crafted to enhance collaboration,
+              streamline on-budget delivery, and ensure effective management
+              fostering transparency and accountability across all initiatives.
+            </p>
+          </div>
+          <div>
+            <button
+              class="bg-[#01054C] px-6 py-3 rounded-lg text-white hover:bg-blue-700"
+            >
+              Explore application
+            </button>
+          </div>
+        </div>
+
+        <!-- Feature Columns -->
+        <div class="flex flex-col md:flex-row gap-7 w-full">
+          <div class="md:w-1/2 space-y-7">
+            <div
+              class="space-y-5 text-center md:text-left hover:shadow-lg hover:p-2 rounded-lg transition-shadow"
+            >
+              <img
+                src="./images/1 (2).png"
+                alt="Real-Time Project Tracking"
+                class="mx-auto md:mx-0 w-12 h-12"
+              />
+              <h3 class="text-xl">Real-Time Project Tracking</h3>
+              <p class="text-gray-700">
+                Monitor project progress, milestones, and task completion in
+                real-time. Gain immediate insights into project status and
+                potential bottlenecks.
+              </p>
+            </div>
+            <div
+              class="space-y-5 text-center md:text-left hover:shadow-lg hover:p-2 rounded-lg transition-shadow"
+            >
+              <img
+                src="./images/2 (2).png"
+                alt="Efficient Resource Management"
+                class="mx-auto md:mx-0 w-12 h-12"
+              />
+              <h3 class="text-xl">Efficient Resource Management</h3>
+              <p class="text-gray-700">
+                Allocate resources effectively, track utilization, and optimize
+                resource distribution across projects. Ensure projects are
+                adequately staffed and resourced.
+              </p>
+            </div>
+          </div>
+
+          <div class="md:w-1/2 space-y-7">
+            <div
+              class="space-y-5 text-center md:text-left hover:shadow-lg hover:p-2 rounded-lg transition-shadow"
+            >
+              <img
+                src="./images/1.png"
+                alt="Collaborative Task Management"
+                class="mx-auto md:mx-0 w-12 h-12"
+              />
+              <h3 class="text-xl">Collaborative Task Management</h3>
+              <p class="text-gray-700">
+                Assign tasks, share updates, and facilitate communication within
+                a centralized platform. Enhance team coordination and streamline
+                workflows.
+              </p>
+            </div>
+            <div
+              class="space-y-5 text-center md:text-left hover:shadow-lg hover:p-2 rounded-lg transition-shadow"
+            >
+              <img
+                src="./images/2.png"
+                alt="Comprehensive Reporting"
+                class="mx-auto md:mx-0 w-12 h-12"
+              />
+              <h3 class="text-xl">Comprehensive Reporting and Analytics</h3>
+              <p class="text-gray-700">
+                Generate detailed reports, analyze project performance, and make
+                informed decisions. Leverage data analytics to drive continuous
+                improvement and project success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-28 px-4 md:px-6 mx-auto my-5 rounded-lg text-center w-full max-w-[calc(100%-10px)] bg-[#DBDDFF] relative overflow-hidden"
+    >
+      <!-- Decorative images in background -->
+      <div class="hidden lg:block absolute top-0 right-0 z-10">
+        <img src="./images/aircraft.png" alt="Aircraft" class="max-w-full" />
+      </div>
+
+      <div class="hidden lg:block absolute bottom-0 left-0 z-10">
+        <img src="./images/Group 331.png" alt="Group" class="max-w-full" />
+      </div>
+
+      <!-- Content with higher z-index -->
+      <div class="relative z-20">
+        <h2 class="text-lg md:text-2xl w-full md:w-[60%] lg:w-[40%] mx-auto">
+          Maximize project success. Our EPMS provides robust portfolio
+          management tools for informed decision-making.
+        </h2>
+
+        <button
+          class="mt-6 bg-[#01054C] px-10 py-3 rounded-lg text-white hover:bg-blue-700 text-sm sm:text-base"
+        >
+          Login
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="py-10 px-4 md:px-10 mx-auto my-5 rounded-lg w-full max-w-[calc(100%-10px)] bg-[#01054C] text-white"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-between mb-10 md:mb-20 text-center md:text-left gap-6"
+      >
+        <h2 class="text-2xl md:text-4xl w-full md:w-[50%] leading-tight">
+          Electronic Project Portfolio Management System
+        </h2>
+        <p class="text-sm w-full md:w-[39%]">
+          Streamline project lifecycles, enhance collaboration, and ensure
+          on-time, on-budget delivery with our robust and intuitive platform.
+          EEPMS empowers your teams to manage complex projects effectively,
+          fostering transparency and accountability across all initiatives.
+        </p>
+      </div>
+
+      <hr class="mb-10 border-gray-400" />
+
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="./images/ncaalogo 2.png"
+            alt="NCAA Logo"
+            class="w-10 h-10 rounded-full"
+          />
+          <span class="text-white text-lg font-semibold">NCAA</span>
+        </div>
+        <p class="text-sm md:text-base">© All rights reserved • 2025</p>
+      </div>
+    </section>
+  </body>
+</html>
