@@ -34,83 +34,54 @@
     </style>
   </head>
   <body class="bg-gray-50">
-    <section
-    id="hero-section"
-    class="relative bg-cover bg-center pb-32 pt-20 flex flex-col items-start justify-center px-4 md:px-6 transition-all duration-700"
-    style="background-image: url('./images/hero-bg.png')"
-  >
-    <!-- Your existing content remains untouched... -->
-    <!-- Navbar -->
-    <header
-      class="mx-auto z-20 bg-[#7272724D] bg-opacity-50 w-[90%] py-3 px-4 md:px-6 flex items-center justify-between rounded-lg"
-    >
-      <div class="flex items-center gap-3">
-        <img
-          src="./images/ncaalogo 2.png"
-          alt="NCAA Logo"
-          class="w-10 h-10 rounded-full"
-        />
-        <span class="text-white text-lg font-semibold">NCAA</span>
-      </div>
-  
-      <div class="flex gap-2">
-        <button
-          class="bg-[#E4E6FF] text-[#01054C] px-4 md:px-6 py-2 rounded-lg hover:bg-[#01054C] hover:text-white text-sm md:text-base"
-        >
-          NCAA
-        </button>
-        <button
-          class="bg-[#01054C] text-white px-8 py-2 rounded-lg hover:bg-[#E4E6FF] hover:text-[#01054C]"
-        >
-          Login
-        </button>
-      </div>
-    </header>
-  
-    <!-- Hero Content -->
-    <div class="flex flex-col md:flex-row items-center mt-16 w-[80%] mx-auto gap-8">
-      <div>
-        <div class="w-full lg:w-[50%] text-white text-center md:text-left p-4 sm:px-8 bg-[#97979780] bg-opacity-50">
-          
+    <section class="relative h-screen overflow-hidden flex flex-col justify-start pt-20 pb-32 px-4 md:px-6" id="hero-carousel-wrapper">
+      <!-- Background Image Layers -->
+      <div id="bg1" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 z-0" style="background-image: url('./images/hero-bg.png');"></div>
+      <div id="bg2" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 z-0"></div>
+    
+      <!-- Hero Content (your content stays untouched here) -->
+      <div id="hero-section" class="relative z-10 w-full">
+        <!-- Navbar -->
+        <header class="mx-auto z-20 bg-[#7272724D] bg-opacity-50 w-[90%] py-3 px-4 md:px-6 flex items-center justify-between rounded-lg">
+          <div class="flex items-center gap-3">
+            <img src="./images/ncaalogo 2.png" alt="NCAA Logo" class="w-10 h-10 rounded-full" />
+            <span class="text-white text-lg font-semibold">NCAA</span>
+          </div>
+          <div class="flex gap-2">
+            <button class="bg-[#E4E6FF] text-[#01054C] px-4 md:px-6 py-2 rounded-lg hover:bg-[#01054C] hover:text-white text-sm md:text-base">NCAA</button>
+            <button class="bg-[#01054C] text-white px-8 py-2 rounded-lg hover:bg-[#E4E6FF] hover:text-[#01054C]">Login</button>
+          </div>
+        </header>
+    
+        <!-- Hero Content -->
+        <div class="flex flex-col md:flex-row items-center mt-16 w-[80%] mx-auto gap-8">
+          <div>
+            <div class="w-full lg:w-[50%] text-white text-center md:text-left p-4 sm:px-8 bg-[#97979780] bg-opacity-50">
               <!-- Green Banner -->
-              <div
-                class="w-full sm:w-[80%] mx-auto md:mx-0 hidden md:flex items-center bg-[#E1FFDA] text-[#065F46] px-4 py-2 rounded-full justify-between mb-4 shadow-md"
-              >
+              <div class="w-full sm:w-[80%] mx-auto md:mx-0 hidden md:flex items-center bg-[#E1FFDA] text-[#065F46] px-4 py-2 rounded-full justify-between mb-4 shadow-md">
                 <img src="./images/hand.png" alt="Icon" class="w-6 h-6" />
-                <span class="font-semibold text-sm md:text-base text-center">
-                  Optimize Projects. Drive Success.
-                </span>
+                <span class="font-semibold text-sm md:text-base text-center">Optimize Projects. Drive Success.</span>
                 <img src="./images/dollar.png" alt="Icon" class="w-6 h-6" />
               </div>
-  
+    
               <h1 class="text-xl md:text-3xl lg:text-4xl mt-20 md:mt-0">
-                Welcome to the NCAA's Electronic Project Portfolio Management
-                System (EPPMS).
+                Welcome to the NCAA's Electronic Project Portfolio Management System (EPPMS).
               </h1>
-  
-              <p
-                class="mt-4 text-[14px] sm:text-[16px] max-w-lg lg:max-w-xl leading-relaxed"
-              >
-                Streamline project lifecycles, enhance collaboration, and ensure
-                on-time, on-budget delivery with our robust and intuitive
-                platform. EPPMS empowers your teams to manage complex projects
-                effectively, fostering transparency and accountability across all
-                initiatives.
+    
+              <p class="mt-4 text-[14px] sm:text-[16px] max-w-lg lg:max-w-xl leading-relaxed">
+                Streamline project lifecycles, enhance collaboration, and ensure on-time, on-budget delivery with our robust and intuitive platform. EPPMS empowers your teams to manage complex projects effectively, fostering transparency and accountability across all initiatives.
               </p>
-          
-        </div>
-  
-        <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
-          <button class="bg-[#01054C] text-white px-6 md:px-8 py-2 rounded-lg hover:bg-[#E4E6FF] hover:text-[#01054C] transition-all">
-            Login
-          </button>
-          <button class="bg-[#E4E6FF] text-[#01054C] px-5 md:px-6 py-2 rounded-lg hover:bg-[#01054C] hover:text-white transition-all">
-            Explore live projects
-          </button>
+            </div>
+    
+            <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+              <button class="bg-[#01054C] text-white px-6 md:px-8 py-2 rounded-lg hover:bg-[#E4E6FF] hover:text-[#01054C] transition-all">Login</button>
+              <button class="bg-[#E4E6FF] text-[#01054C] px-5 md:px-6 py-2 rounded-lg hover:bg-[#01054C] hover:text-white transition-all">Explore live projects</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
     <!-- Minister Section -->
     <section class="py-16 px-4 md:px-6 w-full max-w-full box-border">
       <div
@@ -420,20 +391,38 @@
       </div>
     </section>
     <script>
-      const heroSection = document.getElementById("hero-section");
+      const bg1 = document.getElementById('bg1');
+      const bg2 = document.getElementById('bg2');
+    
       const images = [
         "./images/bg-2.png",
         "./images/bg-3.png",
         "./images/bg-4.png"
       ];
     
-      let current = 0;
+      let index = 0;
+      let showingFirst = true;
     
       setInterval(() => {
-        current = (current + 1) % images.length;
-        heroSection.style.backgroundImage = `url('${images[current]}')`;
-      }, 5000); // every 5 seconds
+        index = (index + 1) % images.length;
+        if (showingFirst) {
+          bg2.style.backgroundImage = `url('${images[index]}')`;
+          bg2.classList.remove('opacity-0');
+          bg2.classList.add('opacity-100');
+          bg1.classList.remove('opacity-100');
+          bg1.classList.add('opacity-0');
+        } else {
+          bg1.style.backgroundImage = `url('${images[index]}')`;
+          bg1.classList.remove('opacity-0');
+          bg1.classList.add('opacity-100');
+          bg2.classList.remove('opacity-100');
+          bg2.classList.add('opacity-0');
+        }
+        showingFirst = !showingFirst;
+      }, 5000);
     </script>
+    
+    
     </body>
     </html>
     
